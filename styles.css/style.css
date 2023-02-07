@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --dark-one: #6cb3d0;
+    --dark-one: #e6b400;
   --dark-two: #494343;
-  --main-color: #66aeca;
+  --main-color: #5DBB63;
   --light-one: #fff;
   --light-two: #eba286;
   --light-three: #f6f7fb;
@@ -254,7 +254,7 @@ nav .container {
 .links a {
   display: inline-block;
   padding: 0.9rem 1.2rem;
-  color: var(--dark-one);
+  color: var(--main-color);
   font-size: 1.05rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -277,7 +277,7 @@ nav .container {
 
 .links a.active:hover {
   color: var(--light-one);
-  background-color: #6b44e0;
+  background-color: #44e0c6;
 }
 
 .hamburger-menu {
@@ -319,7 +319,7 @@ nav .container {
 }
 
 nav.open .hamburger-menu .bar {
-  background-color: transparent;
+  background-color: grey;
   transform: rotate(360deg);
 }
 
@@ -355,7 +355,8 @@ nav.open .links {
 }
 
 .header-content .image .img-element {
-  max-width: 750px;
+  max-width: 500px;
+  border-radius: 50%;
 }
 
 header .points1 {
@@ -510,7 +511,7 @@ header .circle {
 
 /* End Skills */
 
-/* Portfolio */
+/* experience */
 
 .portfolio {
   position: relative;
@@ -702,19 +703,6 @@ header .circle {
 
 /* End Portfolio */
 
-/* About */
-
-.about {
-  overflow: hidden;
-}
-
-.about img {
-  max-width: 600px;
-}
-
-.about .text {
-  margin-top: 1rem;
-}
 
 .skills {
   margin: 1.5rem 0 2.5rem 0;
@@ -801,6 +789,7 @@ header .circle {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: var(--light-one);
 }
 
@@ -968,99 +957,15 @@ header .circle {
 
 /* End Blog */
 
-/* Testimonials */
-
-.testimonials {
-  background-color: var(--light-two);
-  overflow: hidden;
-}
-
-.testi-content {
-  margin-top: 6rem;
-}
-
-.reviews {
-  overflow: hidden;
-}
-
-.review {
-  position: relative;
-  padding: 2rem 1.5rem;
-}
-
-.quote {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--main-color);
-  opacity: 0.04;
-  font-size: 8rem;
-}
-
-.rate {
-  display: flex;
-  font-size: 1.4rem;
-  color: #ebc000;
-  margin-bottom: 1.5rem;
-}
-
-.rate i {
-  margin-right: 0.3rem;
-}
-
-.review-text {
-  font-size: 1.35rem;
-  font-weight: 300;
-  color: #444;
-  line-height: 1.7;
-}
-
-.review-info {
-  margin-top: 2rem;
-}
-
-.review-name {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--dark-one);
-}
-
-.review-job {
-  font-size: 1.15rem;
-  font-weight: 300;
-  color: #777;
-}
-
-.review-nav {
-  bottom: 2.2rem;
-  top: initial;
-  font-size: 1.8rem;
-  color: var(--main-color);
-}
-
-.swiper-button-next {
-  right: 2rem;
-  left: initial;
-}
-
-.swiper-button-prev {
-  right: 4.5rem;
-  left: initial;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  display: none;
-}
-
-/* End Testimonials */
-
 /* Contact */
 
 .contact {
   position: relative;
   width: 100%;
   padding: 13.5rem 0 8.5rem;
+  background-color:#FFFFF0 ;
+  padding: 20px;
+  margin: 20px;
 }
 
 .contact:before,
@@ -1096,6 +1001,7 @@ header .circle {
 
 .contact-info {
   padding-right: 2rem;
+  
 }
 
 .contact-form {
@@ -1216,7 +1122,7 @@ header .circle {
 /* Footer */
 
 .footer {
-  background-color: #222;
+  background-color:#FFFFF0;
   padding: 6rem 0;
 }
 
@@ -1230,12 +1136,12 @@ header .circle {
 }
 
 .footer .title-sm {
-  color: #fafafa;
+  color: grey;
   margin-bottom: 0.9rem;
 }
 
 .footer .text {
-  color: #aaa;
+  color: #908686;
 }
 
 .footer-links a {
@@ -1261,7 +1167,7 @@ header .circle {
 }
 
 .footer-input {
-  background: #373737;
+  background: whitesmoke;
   color: #333;
   outline: none;
   border: none;
@@ -1281,7 +1187,7 @@ header .circle {
 }
 
 .input-arrow:hover {
-  background-color: #6b44e0;
+  background-color: #958d53;
 }
 
 .focus {
