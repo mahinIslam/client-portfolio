@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --dark-one: #e6b400;
+  --dark-one: #e6b400;
   --dark-two: #494343;
   --main-color: #5DBB63;
   --light-one: #fff;
   --light-two: #eba286;
   --light-three: #f6f7fb;
 }
-
-
 
 /* Genral Styles */
 
@@ -277,7 +275,7 @@ nav .container {
 
 .links a.active:hover {
   color: var(--light-one);
-  background-color: #44e0c6;
+  background-color: #cdac36;
 }
 
 .hamburger-menu {
@@ -1270,7 +1268,7 @@ header .circle {
 }
 
 .back-btn:hover {
-  background-color: #6b44e0;
+  background-color: #c2a217;
 }
 
 .back-btn-wrap:before {
