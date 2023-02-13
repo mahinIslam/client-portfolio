@@ -602,7 +602,7 @@ header .circle {
   align-items: center;
   justify-content: center;
   text-align: center;
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 1rem;
   grid-row-gap: 2rem;
 }
 
@@ -1002,17 +1002,14 @@ header .circle {
   transition: 1s;
 }
 
-/* End work */
+/* End work */ 
 
 /* Contact */
 
 .contact {
   position: relative;
   width: 100%;
-  padding: 3rem 0 1rem;
- padding: 20px;
-  margin: 20px;
-  
+  padding: 6rem 0 3rem;
 }
 
 .contact:before,
@@ -1027,21 +1024,18 @@ header .circle {
 .contact:before {
   top: 0;
   height: 40%;
-  background: url("../images/color.png") center bottom / cover;
- 
+  background: url("../images/color.png") center center / cover;
 }
 
 .contact:after {
   top: 40%;
   height: 60%;
   background: url("../images/blue.png") center bottom / cover;
-  
- 
 }
 
 .contact-box {
   width: 100%;
-  background-color: var(--light-one);
+  background-color:var(--light-one);
   width: 100%;
   border-radius: 45px;
   padding: 5.5rem 4.5rem;
@@ -1051,7 +1045,6 @@ header .circle {
 
 .contact-info {
   padding-right: 2rem;
-  
 }
 
 .contact-form {
@@ -1147,6 +1140,7 @@ header .circle {
 }
 
 /* End Contact */
+
 
 /* Hire me */
 
@@ -1518,7 +1512,7 @@ header .circle {
     margin: 1rem 0.6rem;
   }
 
-  .skills .points1 {
+  .services .points1 {
     left: -60px;
   }
 
@@ -1907,7 +1901,30 @@ header .circle {
   .background-bg {
     height: 340px;
   }
-  
+
+  .portfolio .half-circle1,
+  .portfolio .triangle,
+  .portfolio .half-circle2 {
+    display: none;
+  }
+
+  .portfolio .square {
+    top: 10%;
+    left: 14%;
+  }
+
+  .portfolio .wave {
+    top: 33%;
+  }
+
+  .portfolio .circle {
+    right: 20%;
+  }
+
+  .portfolio .xshape {
+    top: 25%;
+  }
+
   .skill-bar {
     width: 100%;
   }
@@ -2029,7 +2046,7 @@ header .circle {
     width: 90%;
     max-width: 500px;
     height: 1px;
-    background-color: #130414;
+    background-color: #7b7b7b;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2049,11 +2066,6 @@ header .circle {
 @media (max-width: 560px) {
   .container {
     padding: 0 2rem;
-  }
-  .nav {
-    bottom: 50%;
-    right: 20px;
-    
   }
 
   .title {
@@ -2100,6 +2112,8 @@ header .circle {
     bottom: 90px;
     right: 40px;
   }
+
+  
 
   .review {
     padding: 1.5rem 1rem;
