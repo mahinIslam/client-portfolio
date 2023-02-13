@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --dark-one: #e6b400;
+  --dark-one:rgb(163, 50, 50) ;
   --dark-two: #494343;
-  --main-color: #5DBB63;
+  --main-color: lightseagreen;
   --light-one: #fff;
   --light-two: #eba286;
   --light-three: #f6f7fb;
@@ -271,7 +271,7 @@ nav .container {
 
 .links a:hover {
   color:#cdac36 ;
-  /*color: var(--main-color);*/
+ 
 }
 
 .links a.active:hover {
@@ -509,6 +509,172 @@ header .circle {
 }
 
 /* End Skills */
+
+/* About */
+
+.about {
+ overflow: hidden;
+ background-color: var(--light-three);
+  
+  width: 100%;
+}
+
+.about img {
+  max-width: 500px;
+  border-radius: 50%;
+  
+  
+}
+
+.about .text {
+  margin-top: 0rem;
+}
+
+.skills {
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill {
+  margin: 1rem 0;
+}
+
+.skill-title {
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ab94e1;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transition: 1s;
+}
+
+.about .column-1 {
+  position: relative;
+}
+
+.about .column-1:before {
+  content: "About";
+  position: absolute;
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--main-color);
+  opacity: 0.04;
+  top: 20px;
+  left: 0;
+  line-height: 0;
+}
+
+.about .points {
+  width: 300px;
+  top: 65%;
+  left: 80%;
+  opacity: 0.1;
+}
+
+/* End About */
+/* Records */
+
+.records {
+  position: relative;
+  background-color: var(--main-color);
+  padding: 5.2rem 0;
+}
+
+.records .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.record-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid var(--light-one);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--light-one);
+}
+
+.record-circle.active {
+  background-color: var(--light-one);
+  color: var(--dark-one);
+  box-shadow: 0 0 0 15px rgb(255, 255, 255, 0.5);
+}
+
+.number {
+  font-weight: 400;
+  font-size: 2.35rem;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 1.12rem;
+  text-transform: uppercase;
+}
+
+.records .square1 {
+  left: 8%;
+  top: 10%;
+}
+
+.records .square2 {
+  right: 90px;
+  bottom: 70px;
+}
+
+.records .xshape {
+  top: 45px;
+  right: 120px;
+}
+
+.records .circle {
+  left: 7%;
+  bottom: 50px;
+}
+
+.records .triangle {
+  left: 65%;
+  bottom: 35px;
+}
+
+.records .wave1 {
+  top: 35px;
+  right: 30%;
+}
+
+.records .wave2 {
+  bottom: 40px;
+  left: 28%;
+}
+
+.records .half-circle {
+  top: 30px;
+  right: 50%;
+}
+
+/* End Records */
 
 
 
@@ -837,103 +1003,6 @@ header .circle {
 
 /* End work */
 
-
-
-
-/* Records */
-
-.records {
-  position: relative;
-  background-color: var(--main-color);
-  padding: 1.5rem 0;
-  
-
-}
-
-.records .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  grid-column-gap: 0rem;
-  grid-row-gap: 1.5rem;
-}
-
-.record-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin: 0 auto;
-  border: 4px solid var(--light-one);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--light-one);
-}
-
-.record-circle.active {
-  background-color: var(--light-one);
-  color: var(--dark-one);
-  box-shadow: 0 0 0 15px rgb(255, 255, 255, 0.5);
-  
-}
-
-.number {
-  font-weight: 400;
-  font-size: 2.35rem;
-}
-
-.sub-title {
-  font-weight: 400;
-  font-size: 1.12rem;
-  text-transform: uppercase;
-}
-
-.records .square1 {
-  left: 8%;
-  top: 10%;
-  
-}
-
-.records .square2 {
-  right: 90px;
-  bottom: 70px;
-}
-
-.records .xshape {
-  top: 45px;
-  right: 120px;
-}
-
-.records .circle {
-  left: 7%;
-  bottom: 50px;
-}
-
-.records .triangle {
-  left: 65%;
-  bottom: 35px;
-}
-
-.records .wave1 {
-  top: 35px;
-  right: 30%;
-}
-
-.records .wave2 {
-  bottom: 40px;
-  left: 28%;
-}
-
-.records .half-circle {
-  top: 30px;
-  right: 50%;
-}
-
-/* End Records */
-
 /* Contact */
 
 .contact {
@@ -1079,7 +1148,7 @@ header .circle {
 
 .hireme {
   padding: 6rem 0;
-  background-color:var(--light-three);
+  background-color:var(--light-two);
   padding: 20px;
   margin: 20px;
   
@@ -1087,15 +1156,20 @@ header .circle {
 
 .hireme .container {
   text-align: center;
+  
 }
 
 .hireme .title {
   margin-bottom: 1.3rem;
+ 
+
 }
 
 .hireme .text {
   max-width: 1000px;
   margin: 0 auto 1.6rem auto;
+ 
+  
 }
 
 /* End Hire me */
@@ -1103,8 +1177,9 @@ header .circle {
 /* Footer */
 
 .footer {
-  background-color:#333;
-  padding: 2rem 0;
+  background-color:rgb(163, 50, 50);
+  padding: 1rem 0;
+ 
 }
 
 .footer .grid-4 {
@@ -1117,16 +1192,16 @@ header .circle {
 }
 
 .footer .title-sm {
-  color: rgb(204, 197, 197);
+  color: white;
   margin-bottom: 0.9rem;
 }
 
 .footer .text {
-  color: #bab3b3;
+  color: whitesmoke;
 }
 
 .footer-links a {
-  color: #dad1d1;
+  color: rgb(197, 190, 190);
   font-size: 1.25rem;
   display: inline-block;
   margin-bottom: 0.4rem;
@@ -1168,7 +1243,7 @@ header .circle {
 }
 
 .input-arrow:hover {
-  background-color: #958d53;
+  background-color: #d1b01a;
 }
 
 .focus {
@@ -1191,7 +1266,7 @@ header .circle {
 }
 
 .copyright .text span {
-  color: whitesmoke;
+  color: white;
   cursor: pointer;
 }
 
@@ -1219,14 +1294,14 @@ header .circle {
 }
 
 .social-media a {
-  color: whitesmoke;
+  color: var(--main-color);
   font-size: 1.3rem;
   margin-right: 0.4rem;
   transition: 0.3s;
 }
 
 .social-media a:hover {
-  color: var(--main-color);
+  color: #d1b01a;
 }
 
 .back-btn-wrap {
