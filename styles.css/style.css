@@ -841,7 +841,9 @@ header .circle {
 .contact {
   position: relative;
   width: 100%;
+  height: 700px;
   padding: 13.5rem 0 8.5rem;
+  background: url("../images/black.jpg") center center / cover;
 }
 
 .contact-box {
@@ -851,7 +853,7 @@ header .circle {
   /*padding: 5.5rem 4.5rem;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: url("../images/keith-misner-h0Vxgz5tyXA-unsplash.jpg") center center / cover;
+  background: url("../images/contact\ blue.jpg") center center / cover;
   padding: 6rem 0;
   padding: 20px;
   margin: 20px;
@@ -860,10 +862,13 @@ header .circle {
 
 .contact-info {
   padding-right: 2rem;
+  
 }
 
 .contact-form {
   padding-left: 2rem;
+  color: white;
+  
 }
 
 .contact-info .title:after {
@@ -2052,10 +2057,6 @@ header .circle {
   .contact-box {
     padding: 2.3rem 2rem;
     border-radius: 30px;
-  }
-
-  .contact:before {
-    background-size: 200%;
   }
 
   .contact-form .row {
